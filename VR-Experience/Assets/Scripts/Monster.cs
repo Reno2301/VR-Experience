@@ -26,6 +26,7 @@ public class Monster : MonoBehaviour
         time += Time.deltaTime;
 
         transform.position = Vector3.MoveTowards(transform.position, player.transform.position, walkingSpeed * 0.01f);
+        transform.LookAt(player.transform);
 
         if (time >= timer)
         {
