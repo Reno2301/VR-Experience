@@ -6,7 +6,9 @@ public class Monster : MonoBehaviour
 {
     GameObject player;
 
-    public float timer;
+    public float walkingSpeed;
+    public float screamVolume = 0.5f;
+    public int timer;
     public float time;
 
     public AudioClip clip;
@@ -15,7 +17,7 @@ public class Monster : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        timer = Random.Range(4, 7);
+        timer = Random.Range(0, 10);
     }
 
     // Update is called once per frame
@@ -23,17 +25,18 @@ public class Monster : MonoBehaviour
     {
         time += Time.deltaTime;
 
-        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, .01f);
+        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, walkingSpeed * 0.01f);
 
         if (time >= timer)
         {
-            AudioSource.PlayClipAtPoint(clip, transform.position, 1.0f);
+            AudioSource.PlayClipAtPoint(clip, transform.position, screamVolume);
             SetTimer();
         }
     }
 
     void SetTimer()
     {
-        timer = Random.Range(4, 7);
+        timer = Random.Range(4, 10);
+        time = 0;
     }
 }

@@ -36,7 +36,7 @@ public class Axe : MonoBehaviour
             }
             trackingPos.Add(transform.position);
 
-            /*float triggerRight = OVRInput.Get(OVRInput.RawAxis1D.RIndexTrigger);
+            float triggerRight = OVRInput.Get(OVRInput.RawAxis1D.RIndexTrigger);
 
             if (triggerRight < 0.1f)
             {
@@ -46,18 +46,18 @@ public class Axe : MonoBehaviour
                 rb.useGravity = true;
                 rb.isKinematic = false;
                 GetComponent<Collider>().isTrigger = false;
-            }*/
+            }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-/*        float triggerRight = OVRInput.Get(OVRInput.RawAxis1D.RIndexTrigger);
+        float triggerRight = OVRInput.Get(OVRInput.RawAxis1D.RIndexTrigger);
 
-        if(other.gameObject.tag == "hand" && triggerRight > 0.9f)
+        if (other.gameObject.tag == "hand" && triggerRight > 0.9f)
         {
             pickedUp = true;
             parentHand = other.gameObject;
-        }*/
+        }
     }
 }

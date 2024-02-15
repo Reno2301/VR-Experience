@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.008680698, g: 0.008848519, b: 0.01971401, a: 1}
+  m_IndirectSpecularColor: {r: 0.008423444, g: 0.008885609, b: 0.019102383, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3160,33 +3160,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3566368320379306510, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
-      propertyPath: m_IsTrigger
+    - target: {fileID: 2800422285919050556, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: MaxDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800422285919050556, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800422285919050556, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: rolloffMode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 38.5
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.25
+      value: -9.5
       objectReference: {fileID: 0}
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3215,6 +3211,18 @@ PrefabInstance:
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337021146939813772, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 87b2a868ecc4355469ccdc4d0c8b6cc4, type: 3}
+    - target: {fileID: 6337021146939813772, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: screamVolume
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337021146939813772, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: walkingSpeed
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7313247619532381303, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_Name
@@ -5670,7 +5678,7 @@ GameObject:
   - component: {fileID: 593767064}
   m_Layer: 0
   m_Name: XR Interaction Manager
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13049,33 +13057,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3566368320379306510, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
-      propertyPath: m_IsTrigger
+    - target: {fileID: 2800422285919050556, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: MaxDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800422285919050556, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800422285919050556, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: rolloffMode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 29
+      value: 20.5
       objectReference: {fileID: 0}
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13104,6 +13108,18 @@ PrefabInstance:
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337021146939813772, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 87b2a868ecc4355469ccdc4d0c8b6cc4, type: 3}
+    - target: {fileID: 6337021146939813772, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: screamVolume
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337021146939813772, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: walkingSpeed
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7313247619532381303, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_Name
@@ -17489,7 +17505,7 @@ GameObject:
   - component: {fileID: 2114868259}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17735,17 +17751,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2800422285919050556, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: MaxDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800422285919050556, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800422285919050556, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15
+      value: -25.75
       objectReference: {fileID: 0}
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.25
+      value: -31
       objectReference: {fileID: 0}
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17774,6 +17802,18 @@ PrefabInstance:
     - target: {fileID: 5538095440546876287, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337021146939813772, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 87b2a868ecc4355469ccdc4d0c8b6cc4, type: 3}
+    - target: {fileID: 6337021146939813772, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: screamVolume
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337021146939813772, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
+      propertyPath: walkingSpeed
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7313247619532381303, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_Name
