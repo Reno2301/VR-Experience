@@ -1615,6 +1615,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 593767065}
+    - target: {fileID: 5572623957659197087, guid: 42e239a451017634ea494b12a29b6add, type: 3}
+      propertyPath: m_ThrowVelocityScale
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5862011241088922724, guid: 42e239a451017634ea494b12a29b6add, type: 3}
       propertyPath: m_Constraints
       value: 0
@@ -2256,7 +2260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UpdateTrackingType: 1
+  m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
   m_ModelPrefab: {fileID: 8049330991655482328, guid: 58c6596562fb8ab468a5f4b0c125d7cd, type: 3}
@@ -3239,7 +3243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6337021146939813772, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: walkingSpeed
-      value: 0.4
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 7313247619532381303, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_Name
@@ -7790,7 +7794,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 4
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -10626,7 +10630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UpdateTrackingType: 1
+  m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
   m_ModelPrefab: {fileID: 8049330991655482328, guid: 58c6596562fb8ab468a5f4b0c125d7cd, type: 3}
@@ -11829,7 +11833,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 4
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -13102,7 +13106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6337021146939813772, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: walkingSpeed
-      value: 0.4
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 7313247619532381303, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_Name
@@ -16432,7 +16436,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 4
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -17524,7 +17528,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 4
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
@@ -17668,7 +17672,7 @@ Transform:
   m_GameObject: {fileID: 2114868258}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17943,7 +17947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6337021146939813772, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: walkingSpeed
-      value: 0.4
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 7313247619532381303, guid: 5725c855c4bcbdc4eab855d2a94a9e8e, type: 3}
       propertyPath: m_Name
