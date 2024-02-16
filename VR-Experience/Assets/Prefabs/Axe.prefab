@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fa306732c4cfd2a41acc08896965614e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -166,7 +166,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c396cec049763f34199d10a5b633c3eb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -237,7 +237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d9da96e875f8b4493ceea2cb51b133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 1000
+  velocity: 1000
+  player: {fileID: 0}
   startPosition: {x: 0, y: 0, z: 0}
 --- !u!54 &5862011241088922724
 Rigidbody:

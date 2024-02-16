@@ -11,7 +11,13 @@ public class Monster : MonoBehaviour
     public int timer;
     public float time;
 
-    public AudioClip clip;
+    public float health = 1f;
+    public bool isDead;
+
+    public AudioClip clipScream;
+    public AudioClip clipDead;
+
+    public GameObject monsterDead;
 
     // Start is called before the first frame update
     void Start()
@@ -30,8 +36,14 @@ public class Monster : MonoBehaviour
 
         if (time >= timer)
         {
-            AudioSource.PlayClipAtPoint(clip, transform.position, screamVolume);
+            AudioSource.PlayClipAtPoint(clipScream, transform.position, screamVolume);
             SetTimer();
+        }
+
+        if(health <= 0 && !isDead)
+        {
+            isDead = true;
+            Dead();
         }
     }
 
@@ -39,5 +51,13 @@ public class Monster : MonoBehaviour
     {
         timer = Random.Range(4, 10);
         time = 0;
+    }
+
+    void Dead()
+    {
+        AudioSource.PlayClipAtPoint(clipDead, transform.position, screamVolume);
+        monsterDead = Instantiate(monsterDead, transform.position, Quaternion.identity);
+        monsterDead.transform.LookAt(player.transform);
+        Destroy(gameObject);
     }
 }

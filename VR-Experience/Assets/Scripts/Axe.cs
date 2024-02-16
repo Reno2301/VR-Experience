@@ -30,7 +30,7 @@ public class Axe : MonoBehaviour
             transform.position = parentHand.transform.position;
             transform.rotation = parentHand.transform.rotation;
 
-            if(trackingPos.Count > 15)
+            if (trackingPos.Count > 15)
             {
                 trackingPos.RemoveAt(0);
             }
@@ -54,10 +54,15 @@ public class Axe : MonoBehaviour
     {
         float triggerRight = OVRInput.Get(OVRInput.RawAxis1D.RIndexTrigger);
 
-        if (other.gameObject.tag == "hand" && triggerRight > 0.9f)
+        if (other.gameObject.tag == "Hand" && triggerRight > 0.9f)
         {
             pickedUp = true;
             parentHand = other.gameObject;
+        }
+        if(other.gameObject.tag == "Monster")
+        {
+            other.GetComponent<Monster>().health -= 1;
+            //rb.constraints = RigidbodyConstraints.FreezeAll;
         }
     }
 }
